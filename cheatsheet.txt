@@ -18,9 +18,9 @@ Get project from Github
 
 Create new branch
    git branch new_branch_name
-   // Then, switch to branch
+   // Then, switch to branch:
    git checkout new_branch_name
-   // OR use -b option to auto-switch
+   // OR use -b option to auto-switch, combining the two commands above:
    git branch -b new_branch_name
 
 Check what branch you're currently in
@@ -29,8 +29,10 @@ Check what branch you're currently in
 Push a change to Github
    git add .
    git commit -m 'Commit message'
-   // OR combine these two commands with:
-   git push -u origin master (or branch_name if you're on a different branch)
+   // Push to master:
+   git push -u origin master
+   // Or, if pushing to a branch:
+   git push -u origin branch_name
 
 Merge a branch into master
    *do some work on a branch
@@ -39,10 +41,10 @@ Merge a branch into master
 
 Fixing merge conflicts
 	// Receive message about merge conflict
-	// Open file that is conflicting
-	// Fix file/files. Check file/s with::
+	// Open file/files that is/are conflicting
+	// Fix file/files. Check which file/s are having conflicts with:
 	git status
-	// See https://help.github.com/en/articles/resolving-a-merge-conflict-using-the-command-line
+	// If you need help, see https://help.github.com/en/articles/resolving-a-merge-conflict-using-the-command-line
 	git add .
 	git push origin branch_name
 
