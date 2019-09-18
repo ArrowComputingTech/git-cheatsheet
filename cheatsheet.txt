@@ -2,15 +2,6 @@ Configure git (only once per machine/O.S. install/environment setup)
    git config --global user.name "ArrowComputingTech"
    git config --global user.email "github@arrowcomputing.tech"
 
-Creating a new local repo and push to a new Gitlab repo:
-   *do some coding
-   cd /base_directory_of_project
-   git init
-   git add README.md
-   git commit -m 'first commit'
-   git push --set-upstream git@gitlab.example.com:user_name/some_project_name.git master
-   // Now you can push normally.
-
 Get project from Github
    Go to project repo.
    // Click 'Clone or download' & copy link.
