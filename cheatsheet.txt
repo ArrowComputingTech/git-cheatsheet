@@ -39,6 +39,15 @@ Fixing merge conflicts
 	git add .
 	git push origin branch_name
 
+Revert to previous commit - don't include {}
+	git revert {commit_id}
+
+Revert to previous changes (can be used for individual files
+	// Erase all local changes
+	git reset --hard {commit_id}   // Don't use {}
+	// Keep local changes
+	git reset --soft {commit_id}
+
 Delete a file from your local git repo
    git rm some_dir/file_name.txt
 
