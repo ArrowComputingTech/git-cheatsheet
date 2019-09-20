@@ -25,6 +25,13 @@ Push a change to Github
    // Or, if pushing to a branch:
    git push -u origin branch_name
 
+Make a small change before you push to remote
+	git add {modified_files} // or .
+	git commit --amend --no-edit
+
+Change commit message
+	git commit --amend
+
 Merge a branch into master
    *do some work on a branch
    git checkout master
@@ -39,14 +46,20 @@ Fixing merge conflicts
 	git add .
 	git push origin branch_name
 
+Remove last commit from master branch
+	git reset HEAD~ --hard
+
 Revert to previous commit - don't include {}
 	git revert {commit_id}
 
-Revert to previous changes (can be used for individual files
+Revert to previous changes (can be used for individual files - don't include {}
 	// Erase all local changes
-	git reset --hard {commit_id}   // Don't use {}
+	git reset --hard {commit_id}
 	// Keep local changes
 	git reset --soft {commit_id}
+
+Check reference log
+	git reflog
 
 Delete a file from your local git repo
    git rm some_dir/file_name.txt
