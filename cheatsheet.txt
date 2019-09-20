@@ -46,6 +46,9 @@ Fixing merge conflicts
 	git add .
 	git push origin branch_name
 
+Delete a branch (after you have merged it to master, or just want it gone...)
+	git branch -d branch_name
+
 Remove last commit from master branch
 	git reset HEAD~ --hard
 
